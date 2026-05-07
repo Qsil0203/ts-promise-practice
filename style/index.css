@@ -1,0 +1,57 @@
+body {
+  background: #f6f6f6;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+#list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 32px;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  justify-content: center; /* чтобы сетка была по центру */
+}
+
+.post-card {
+  flex: 0 0 calc(33% - 16px); /* 3 карточки в строке, gap на 3 */
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 22px 28px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 220px; /* для красоты */
+  transition: box-shadow 0.2s;
+}
+
+.post-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 2px;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+}
+
+.post-title {
+  font-size: 1.5rem;
+  color: #2E2A3A;
+  margin: 0 0 8px 0;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.12em;
+}
+
+.post-body {
+  color: #4E4767;
+  font-size: 1.07rem;
+  line-height: 1.5;
+  margin: 0;
+}
