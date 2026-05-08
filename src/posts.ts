@@ -10,7 +10,8 @@ export function renderPosts() {
       <li class="post-card">
         <div class="post-title">${post.title}</div>
         <div class="post-body">${post.body}</div>
-        <a class="post-link " href="${post.link}">Link: ${post.link}</a>
+        <div class = "onbutton">
+        <button class ="custom-btn" onclick="document.location='${post.link}'">Link on post</button></div>
     </li>
     `
     document.getElementById("list")?.appendChild(li)
